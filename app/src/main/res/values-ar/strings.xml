@@ -44,4 +44,14 @@
     <string name="notification_channel_name">معلومات النشاط</string>
     <string name="notification_channel_description">يعرض معلومات النشاط الحالي</string>
     <string name="autostart_open_failed">فشل فتح التشغيل التلقائي</string>
+    <string name="menu">القائمة</string>
+    <string name="auto_update_check">التحقق من التحديث التلقائي</string>
+    <string name="auto_update_desc">لضمان حصولك على أحدث الميزات وإصلاحات الأخطاء، يمكن لهذا التطبيق التحقق من GitHub بحثًا عن إصدارات جديدة عند بدء التشغيل. \n\nملاحظة: يتطلب هذا اتصالاً بالإنترنت. يمكنك تعطيل هذه الميزة في أي وقت من القائمة.</string>
+    <string name="use_system_font">استخدام خط النظام</string>
+    <string name="restart_required">إعادة التشغيل مطلوبة</string>
+    <string name="restart">إعادة تشغيل</string>
+    <string name="later">لاحقاً</string>
+    <string name="restart_app">يرجى إعادة تشغيل التطبيق لتطبيق التغييرات الجديدة.</string>
+    <string name="global_version">الإصدار العالمي</string>
+    <string name="global_version_description"><![CDATA[قم بالترقية إلى الإصدار العالمي للاستفادة من:<br><br> • <b>تحكم غير محدود</b>: دمج كامل مع خدمة إمكانية الوصول.<br> • <b>رؤية كاملة</b>: اكتشاف كل تطبيق على جهازك.<br> • <b>أداء لا يمكن إيقافه</b>: فحوصات بدء التشغيل الأصلية لمنع إيقاف الخلفية.<br><br>يجب عليك إلغاء تثبيت هذا الإصدار أولاً قبل تثبيت النسخة العالمية.]]></string>
 </resources>

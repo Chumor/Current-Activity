@@ -44,4 +44,14 @@
     <string name="notification_channel_name">Información de actividad</string>
     <string name="notification_channel_description">Muestra información de la actividad actual</string>
     <string name="autostart_open_failed">Error al abrir el inicio automático</string>
+    <string name="menu">Menú</string>
+    <string name="auto_update_check">Comprobación de actualización automática</string>
+    <string name="auto_update_desc">Para garantizar que tengas las últimas funciones y correcciones de errores, esta aplicación puede buscar nuevas versiones en GitHub al iniciar. \n\nNota: Esto requiere conexión a Internet. Puedes desactivar esta opción en cualquier momento en el menú.</string>
+    <string name="use_system_font">Usar fuente del sistema</string>
+    <string name="restart_required">Reinicio necesario</string>
+    <string name="restart">Reiniciar</string>
+    <string name="later">Más tarde</string>
+    <string name="restart_app">Por favor, reinicia la aplicación para que los cambios surtan efecto.</string>
+    <string name="global_version">Versión Global</string>
+    <string name="global_version_description"><![CDATA[Actualiza a la Versión Global para desbloquear:<br><br> • <b>Control Ilimitado</b>: Integración completa con el Servicio de Accesibilidad.<br> • <b>Visibilidad Total</b>: Detecta todas las aplicaciones en tu dispositivo.<br> • <b>Rendimiento Imparable</b>: Comprobaciones nativas de autoinicio para evitar cierres en segundo plano.<br><br>Debes desinstalar esta versión antes de instalar la edición Global.]]></string>
 </resources>

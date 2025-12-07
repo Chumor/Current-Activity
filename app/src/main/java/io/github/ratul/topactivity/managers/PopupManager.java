@@ -33,6 +33,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.view.ContextThemeWrapper;
 
 import io.github.ratul.topactivity.R;
 import io.github.ratul.topactivity.receivers.NotificationReceiver;
@@ -98,9 +99,19 @@ public class PopupManager {
         if (windowManager != null && isViewVisible()) {
             try {
                 windowManager.removeView(baseView);
-            } catch (Throwable ignored) {
+            } catch (Exception ignored) {
             }
         }
+
+        // Reset all static variables
+        layoutParams = null;
+        windowManager = null;
+        packageManager = null;
+        baseView = null;
+        appName = null;
+        packageName = null;
+        className = null;
+
         QuickSettingsTileService.updateTile(context);
     }
 
@@ -125,7 +136,10 @@ public class PopupManager {
         layoutParams.gravity = Gravity.CENTER;
         layoutParams.windowAnimations = android.R.style.Animation_Toast;
 
-        baseView = LayoutInflater.from(context).inflate(R.layout.content_activity_info, null);
+        ContextThemeWrapper wrapper = new ContextThemeWrapper(context,
+                DatabaseUtil.shouldUseSystemFont() ? R.style.AppTheme_SystemFont : R.style.AppTheme);
+        baseView = LayoutInflater.from(wrapper)
+                .inflate(R.layout.content_activity_info, null, false);
         appName = baseView.findViewById(R.id.app_name);
         packageName = baseView.findViewById(R.id.package_name);
         className = baseView.findViewById(R.id.class_name);
